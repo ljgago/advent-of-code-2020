@@ -1,8 +1,10 @@
-# Advent of Code 2020 - Day 01
+# Advent of Code 2020 - Day XX
 
-## Part 1
+## Part One
+
 TODO
 
-## Part 2
+## Part Two
+
 TODO
 
