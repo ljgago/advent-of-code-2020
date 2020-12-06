@@ -5,7 +5,6 @@
 - [Day 03](day03)
 - [Day 04](day04)
 - [Day 05](day05)
-
 - [Template](template)
 
 [MIT Lisence](LICENSE)
