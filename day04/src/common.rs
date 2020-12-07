@@ -4,17 +4,6 @@ use std::collections::HashMap;
 use std::convert::Infallible;
 use std::str::FromStr;
 
-pub fn read<T>(filename: &str) -> Vec<T>
-where
-    T: FromStr,
-{
-    std::fs::read_to_string(filename)
-        .expect("file not found!")
-        .split("\n\n")
-        .flat_map(|x| x.trim().parse())
-        .collect()
-}
-
 #[derive(Debug, PartialEq, Clone)]
 pub struct Passport {
     pub fields: HashMap<String, String>,
