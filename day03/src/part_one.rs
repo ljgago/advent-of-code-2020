@@ -18,22 +18,11 @@ pub fn count_trajectory_trees(data: &[String], slope: &(usize, usize)) -> Option
             return Some(count);
         }
 
-        x = if x < x_size {
-            x
-        } else if x >= x_size {
-            x - x_size
-        } else {
-            return None;
-        };
-
-        // println!("({}, {})", x, y);
-        // println!("{}", data[y].chars().nth(x)?);
-
         if data[y].chars().nth(x)? == tree {
             count += 1
         }
 
-        x += right;
+        x = (x + right) % x_size;
         y += down;
     }
 }
