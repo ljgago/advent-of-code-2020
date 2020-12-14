@@ -1,4 +1,4 @@
-// Advent of Code 2020 - Day X
+// Advent of Code 2020 - Day 7
 
 use aoc2020::input::read_by_line;
 
