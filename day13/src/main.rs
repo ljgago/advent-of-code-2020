@@ -3,8 +3,8 @@
 mod part_one;
 mod part_two;
 
-fn main() -> Result<(), std::io::Error> {
-    let notes: String = std::fs::read_to_string("./resources/input.txt")?;
+fn main() {
+    let notes: String = std::fs::read_to_string("./resources/input.txt").unwrap();
 
     let result = part_one::earliest_bus_times_minutes(&notes).unwrap();
     println!("--- Part One ---");
@@ -13,6 +13,4 @@ fn main() -> Result<(), std::io::Error> {
     let result = part_two::earliest_timestamp_chinese(&notes).unwrap();
     println!("--- Part Two ---");
     println!("Timestamp = {}", result);
-
-    Ok(())
 }

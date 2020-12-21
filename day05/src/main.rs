@@ -8,7 +8,7 @@ use crate::common::*;
 mod part_one;
 mod part_two;
 
-fn main() -> Result<(), std::io::Error> {
+fn main() {
     let data: Vec<Seat> = read_by_line("./resources/input.txt");
 
     let highest_id = part_one::highest_seat_id(&data).unwrap();
@@ -18,6 +18,4 @@ fn main() -> Result<(), std::io::Error> {
     let my_id = part_two::get_seat_id(&data).unwrap();
     println!("--- Part Two ---");
     println!("My seat ID: {}", my_id);
-
-    Ok(())
 }

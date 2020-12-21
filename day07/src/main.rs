@@ -6,7 +6,7 @@ mod common;
 mod part_one;
 mod part_two;
 
-fn main() -> Result<(), std::io::Error> {
+fn main() {
     let data: Vec<String> = read_by_line("./resources/input.txt");
 
     let bags_map = common::hash_map_of_bags(&data);
@@ -17,6 +17,4 @@ fn main() -> Result<(), std::io::Error> {
     let count = part_two::all_individual_bags("shiny gold", &bags_map).unwrap();
     println!("--- Part Two ---");
     println!("Individual bags: {}", count);
-
-    Ok(())
 }

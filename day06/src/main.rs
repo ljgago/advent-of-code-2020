@@ -8,7 +8,7 @@ use common::Form;
 mod part_one;
 mod part_two;
 
-fn main() -> Result<(), std::io::Error> {
+fn main() {
     let data: Vec<Form> = read_by_custom_split("./resources/input.txt", "\n\n");
 
     let total_counts = part_one::sum_of_answers(&data).unwrap();
@@ -18,6 +18,4 @@ fn main() -> Result<(), std::io::Error> {
     let total_counts = part_two::sum_of_answers(&data).unwrap();
     println!("--- Part Two ---");
     println!("Total counts: {}", total_counts);
-
-    Ok(())
 }

@@ -8,7 +8,7 @@ use crate::common::Program;
 mod part_one;
 mod part_two;
 
-fn main() -> Result<(), std::io::Error> {
+fn main() {
     let full_program: Vec<Program> = read_by_custom_split("./resources/input.txt", "mask = ");
 
     let result = part_one::run_and_sum(&full_program).unwrap();
@@ -18,6 +18,4 @@ fn main() -> Result<(), std::io::Error> {
     let result = part_two::run_and_sum(&full_program).unwrap();
     println!("--- Part Two ---");
     println!("Sum of values: {}", result);
-
-    Ok(())
 }

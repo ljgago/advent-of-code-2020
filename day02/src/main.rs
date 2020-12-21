@@ -8,7 +8,7 @@ use common::PasswordPolicy;
 mod part_one;
 mod part_two;
 
-fn main() -> std::io::Result<()> {
+fn main() {
     let data = read_by_line::<PasswordPolicy>("./resources/input.txt");
 
     let count = part_one::count_valid_password(&data).unwrap();
@@ -18,6 +18,4 @@ fn main() -> std::io::Result<()> {
     let count = part_two::count_valid_password(&data).unwrap();
     println!("--- Part Two ---");
     println!("Valid passwords: {}", count);
-
-    Ok(())
 }

@@ -5,7 +5,7 @@ use aoc2020::input::read_by_line;
 mod part_one;
 mod part_two;
 
-fn main() -> Result<(), std::io::Error> {
+fn main() {
     let data: Vec<String> = read_by_line("./resources/input.txt");
 
     let count = part_one::count_trajectory_trees(&data, &(3, 1)).unwrap();
@@ -16,7 +16,4 @@ fn main() -> Result<(), std::io::Error> {
     let multiply = part_two::multiply_trajectory_trees(&data, &slopes).unwrap();
     println!("--- Part Two ---");
     println!("Multiply slopes: {}", multiply);
-
-    Ok(())
 }
-

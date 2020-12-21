@@ -7,7 +7,7 @@ use aoc2020::input::read_by_line;
 mod part_one;
 mod part_two;
 
-fn main() -> std::io::Result<()> {
+fn main() {
     let data: Vec<i64> = read_by_line("./resources/input.txt");
 
     let (sum, multiply) = part_one::check_expense_report(&data);
@@ -27,6 +27,4 @@ fn main() -> std::io::Result<()> {
     let multiply = part_two::check_expense_report_op(data_hash.clone(), 2020).unwrap();
     println!("--- Part Two Optimized ---");
     println!("Multiply: {}", multiply);
-
-    Ok(())
 }
