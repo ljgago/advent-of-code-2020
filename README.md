@@ -17,4 +17,4 @@
 - [Day 15](day15)
 - [Template](template)
 
-[MIT Lisence](LICENSE)
+[MIT License](LICENSE)
