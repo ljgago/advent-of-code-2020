@@ -15,6 +15,7 @@
 - [Day 13](day13)
 - [Day 14](day14)
 - [Day 15](day15)
+- [Day 16](day16)
 - [Template](template)
 
 [MIT License](LICENSE)
